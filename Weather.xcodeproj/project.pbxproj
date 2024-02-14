@@ -12,6 +12,9 @@
 		BB17E5992B74651200EA4344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB17E5982B74651200EA4344 /* ViewController.swift */; };
 		BB17E59E2B74651500EA4344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB17E59D2B74651500EA4344 /* Assets.xcassets */; };
 		BB17E5A12B74651500EA4344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB17E59F2B74651500EA4344 /* LaunchScreen.storyboard */; };
+		BB5E009B2B7B975E00F6FF48 /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E009A2B7B975E00F6FF48 /* HourlyForecastCollectionViewCell.swift */; };
+		BB5E009D2B7B9CA200F6FF48 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E009C2B7B9CA200F6FF48 /* Color+Extensions.swift */; };
+		BB98B6DC2B7C550D009ECA36 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB98B6DB2B7C550D009ECA36 /* Image+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		BB17E59D2B74651500EA4344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB17E5A02B74651500EA4344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB17E5A22B74651500EA4344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5E009A2B7B975E00F6FF48 /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		BB5E009C2B7B9CA200F6FF48 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		BB98B6DB2B7C550D009ECA36 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		BB17E5932B74651200EA4344 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				BB5E009A2B7B975E00F6FF48 /* HourlyForecastCollectionViewCell.swift */,
 				BB17E5942B74651200EA4344 /* AppDelegate.swift */,
 				BB17E5962B74651200EA4344 /* SceneDelegate.swift */,
 				BB17E5982B74651200EA4344 /* ViewController.swift */,
 				BB17E59D2B74651500EA4344 /* Assets.xcassets */,
 				BB17E59F2B74651500EA4344 /* LaunchScreen.storyboard */,
 				BB17E5A22B74651500EA4344 /* Info.plist */,
+				BB5E009C2B7B9CA200F6FF48 /* Color+Extensions.swift */,
+				BB98B6DB2B7C550D009ECA36 /* Image+Extensions.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -134,8 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5E009D2B7B9CA200F6FF48 /* Color+Extensions.swift in Sources */,
 				BB17E5992B74651200EA4344 /* ViewController.swift in Sources */,
 				BB17E5952B74651200EA4344 /* AppDelegate.swift in Sources */,
+				BB98B6DC2B7C550D009ECA36 /* Image+Extensions.swift in Sources */,
+				BB5E009B2B7B975E00F6FF48 /* HourlyForecastCollectionViewCell.swift in Sources */,
 				BB17E5972B74651200EA4344 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
