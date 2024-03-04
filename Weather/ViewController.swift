@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     private lazy var backgroundView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         
@@ -55,12 +55,12 @@ class ViewController: UIViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage.sunIcon
         imageView.contentMode = .scaleAspectFit
-                
+        
         return imageView
     }()
     
     private lazy var humidityLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Umidade"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
@@ -70,7 +70,7 @@ class ViewController: UIViewController {
     }()
     
     private lazy var humidityValueLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "1000mm"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
     }()
     
     private lazy var windLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Vento"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
     }()
     
     private lazy var windValueLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "24 km/h"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
@@ -175,12 +175,16 @@ class ViewController: UIViewController {
         return tableView
     }()
     
+    private let service = Service()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupView()
+        
+        service.fetchData(city: City(lat: "-29.15875010936733", lon: "-51.2140159855397", name: "Caxias do Sul"), { message in print(message) })
     }
-
+    
     private func setupView() {
         view.backgroundColor = .red
         
@@ -200,7 +204,7 @@ class ViewController: UIViewController {
         headerView.addSubview(cityLabel)
         headerView.addSubview(temperatureLabel)
         headerView.addSubview(weatherIcon)
-
+        
     }
     
     private func setConstraints() {
